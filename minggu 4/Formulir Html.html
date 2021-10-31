@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: royalblue;
+	}
+	li a{
+		float: left;
+	}
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	li a:hover {
+		background-color: grey;
+	}
+        td{
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    width: 200px;
+}
+        th{
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    width: 50px;
+}
+    </style>
+<head>
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <ul>
+		<li><a href="Biodata Mahasiswa.html">Biodata Mahasiswa</a></li>
+		<li><a href="Media.html">Media</a></li>
+ 		<li><a href="Formulir Html.html">Form</a></li>
+        <li><a href="Jadwal Pelajaran.html">Jadwal Kuliah</a></li>
+        <li><a href="#about">About</a></li>
+	</ul>
+
+    <h1 style="text-align: center; font-size: 20px;">Formulir Pendaftaran Sekolah</h1>
+    <form action="Proses.php" method="POST">
+    <table rules="rows" border="2" cellpadding="5"> 
+        <tr>
+            <th> Nomor</th>
+            <th style="text-align: center;" colspan="2">Info Pendaftaran</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">1</th>
+            <td width="120"> <label for="Nama">Nama</label> </td>
+            <td><input type="text" name="nama" id="Nama" required placeholder="Masukan Nama...."></td>   
+        </tr>
+        <tr>
+            <th style="text-align: center;">2</th>
+            <td><label for="AsalSekolah"> Asal Sekolah </label></td>
+            <td><input type="text" name="asalsekolah" id="AsalSekolah"required placeholder="Masukan asal sekolah...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">3</th>
+            <td><label for="nisn">NISN</label></td>
+            <td><input type="number" name="nisn" id="nisn"required placeholder="Masukan NISN...."></td> 
+        </tr>
+        <tr>
+            <th style="text-align: center;">4</th>
+            <td><label for="tahun"> Tahun Lulus </label></td>
+            <td><select name="tahun" id="tahun">
+                <option value="">::Pilih Tahun::</option>
+                <option value="15">2015</option>
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                </select>
+            </td> 
+        </tr>
+        <tr>
+            <th style="text-align: center;" colspan="3">Data Calon Peserta</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;" rowspan="2">5</th>
+            <td rowspan="2"><label for="NamaDepan"> Nama Depan</label><br><br><label for="NamaBelakang"> Nama Belakang </label></td>
+            <td rowspan="2"><input type="text" name="namadepan" id="NamaDepan"required placeholder="Masukan Nama Depan...."><br><br>
+                <input type="text" name="namabelakang" id="NamaBelakang"required placeholder="Masukan Nama belakang...."></td> 
+        </tr> 
+        <tr>   
+        </tr>
+        <tr>
+            <th style="text-align: center;">6</th>
+            <td><label for="nik"> NIK </label></td>
+            <td><input type="number" name="nik" id="nik"required placeholder="Masukan NIK...."></td> 
+        </tr>
+        <tr>
+            <th style="text-align: center;">7</th>
+            <td><label for="TanggalLahir">Tanggal Lahir</label> </td>
+            <td><input type="date" name="ttl" id="TanggalLahir"required placeholder="Masukan Tanggal...."></td> 
+        </tr>
+        <tr>
+            <th style="text-align: center;">8</th>
+            <td> Jenis Kelamin </td>
+            <td><input type="radio" name="jk" value="Laki-Laki">Laki-Laki</label>
+                <input type="radio" name="jk" value="Perempuan">Perempuan</label>
+        </tr>
+        <tr>
+            <th style="text-align: center;">9</th>
+            <td><label for="Alamat"> Alamat </label></td>
+            <td><input type="text" name="Alamat" id="Alamat"required placeholder="Masukan Alamat...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">10</th>
+            <td style="text-align: center;"><label for="Desa/Kel"> Desa/Kel </label></td>
+            <td><input type="text" name="desa" id="Desa/Kel"required placeholder="Masukan Desa/Kel...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">11</th>
+            <td style="text-align: center;"><label for="Kecamatan"> Kecamatan </label></td>
+            <td><input type="text" name="kec" id="Kecamatan"required placeholder="Masukan Kecamatan...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">12</th>
+            <td style="text-align: center;"><label for="Kabupaten/Kota"> Kabupaten/Kota </label></td>
+            <td><input type="text" name="kab" id="Kabupaten/Kota"required placeholder="Masukan Kabupaten/Kota...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">13</th>
+            <td style="text-align: center;"><label for="Provinsi"> Provinsi </label></td>
+            <td><input type="text" name="prov" id="Provinsi"required placeholder="Masukan Provinsi...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">14</th>
+            <td><label for="email"> Email Aktif </label></td>
+            <td><input type="email" name="Email" id="email"required placeholder="Masukan Email Aktif...."></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><label> Apakah Hobi Anda Sekarang ? </label></td><br>
+            <td><input type="checkbox" name="hobi" value="Olahraga">Olahraga</label><br>
+                <input type="checkbox" name="hobi" value="Belajar">Belajar</label><br>
+                <input type="checkbox" name="hobi" value="membaca">Membaca</label><br>
+                <input type="checkbox" name="hobi" value="Yang Lainnya">Yang Lainnya</label>
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: center;" colspan="3">Data Orang Tua</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">15</th>
+            <td><label for="NoKK"> No Kartu Keluarga </label></td>
+            <td><input type="number" name="kk" id="NoKK"required placeholder="Masukan Nomor KK...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">16</th>
+            <td><label for="NamaAyah"> Nama Ayah Kandung </label></td>
+            <td><input type="text" name="ayah" id="NamaAyah"required placeholder="Masukan Nama Ayah...."></td>
+        </tr>
+        <tr>
+            <th style="text-align: center;">17</th>
+            <td><label for="Agama"> Agama </label></td>
+            <td><select name="Agama" id="Agama">
+                <option value="">::Agama::</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katholik">Katholik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+                </select>
+            </td> 
+        </tr>
+        <tr>
+            <th style="text-align: center;">16</th>
+            <td><label for="Pekerjaan"> Pekerjaan </label></td>
+            <td><input type="text" name="pekerjaan" id="Pekerjaan"required placeholder="Masukan Pekerjaan...."></td>
+        </tr>
+    
+    </table> 
+    <br><br>
+    <label> Apakah Anda Sudah Mengisi Formulir Dengan Lengkap dan Benar ? </label><br>
+        <input type="radio" name="isi" value="Sudah">Sudah</label>
+        <input type="radio" name="isi" value="Belum">Belum</label> 
+        <br><br><br>
+
+        <button type="submit" name="submit" value="submit">Kirim</button>
+
+        
+    </form>
+    
+
+</body>
+</html>
