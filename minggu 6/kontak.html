@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+</head>
+<style>
+   ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(103, 112, 139);
+        }
+        li a{
+            float: left;
+        }
+        li a {
+            
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        li a:hover {
+            background-color: grey;
+        }
+    </style>
+
+<body>
+    <ul>
+		<li><a href="index.html">Home</a></li> 
+	    <li><a href="media/BIODATA.pdf">Download</a></li>  
+        <li><a href="kontak.html">Contact</a></li> 
+        <li><a href="about.html">About</a></li> 
+	</ul>
+    <hr/><hr>
+    <header style="font-size: 150%;font-style: oblique;">Contact Me</header>
+    <br><br>
+    <form action="minggu6.php" method="POST">
+        <p style="font-style: oblique;">Email</p>
+                <label for="email"></label></td>
+                <input type="email" name="Email" id="email" style="font-style: oblique;"required placeholder="alamat email....">
+        <br>
+        <p style="font-style: oblique;">Pesan</p>
+                <label for="pesan">  </label></td>
+                <textarea name="Pesan" id="pesan" rows="10" cols="30" style="font-style: oblique;"required placeholder="Tulis pesan anda...."></textarea>
+            <br><br>
+            <button type="submit" name="submit" value="submit">Kirim</button>
+    </form>
+    <br><br>
+    <hr/><hr>
+    <p style="text-align: center; font-size: 100%; font-style: oblique;"> Copyright 2021 @afiqnabiha</p>
+        
+</body>
+</html>
